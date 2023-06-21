@@ -18,7 +18,7 @@ int numlength(int n)
 	while (n)
 	{
 		n = n / 10;
-		length += 1
+		length += 1;
 	}
 	return (length);
 }
@@ -35,7 +35,7 @@ int main(void)
 {
 	int count, initial;
 	unsigned long fib1 = 1, fib2 = 2, sum, m = 100000000;
-	unsigned long fibo2 = 0, fibo2 = 0, sumo = 0;
+	unsigned long fibo1 = 0, fibo2 = 0, sumo = 0;
 
 	for (count = 1; count <= 98; count++)
 	{
