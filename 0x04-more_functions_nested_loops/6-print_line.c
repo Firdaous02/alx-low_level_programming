@@ -4,7 +4,6 @@
  * print_line - print a straight line
  *
  * @n: input
- *
 */
 
 void print_line(int n)
