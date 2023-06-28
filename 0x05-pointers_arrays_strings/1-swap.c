@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * swp_int - function
+ * swap_int - function
  *
  * @a: first input
  * @b: second input
@@ -9,7 +9,7 @@
  * Return: return results
 */
 
-void swp_int(int *a, int *b)
+void swap_int(int *a, int *b)
 {
 	int temp;
 
