@@ -9,7 +9,7 @@
 
 int isLower(char c)
 {
-	return (c >= 57 && c <= 122);
+	return (c >= 97 && c <= 122);
 }
 
 /**
