@@ -1,6 +1,6 @@
 #include "main.h"
 
-/***
+/**
  * _strpbrk - function
  * @s: first input
  * @accept: second input
@@ -9,23 +9,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j;
-	char *p;
+	int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		j = 0;
-		while (accept[j] != '\0')
+		for (i = 0; accept[i]; i++)
 		{
-			if (accept[j] == s[i])
-			{
-				p = &s[i];
-				return (p);
-			}
-			j++;
+			if (*s == accept[i])
+
+				return (s);
+
 		}
-		i++;
+		s++;
 	}
-	return (0);
+	return ('\0');
 }
