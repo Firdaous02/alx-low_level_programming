@@ -10,9 +10,9 @@ void print_binary(unsigned long int n)
 	int i = sizeof(n) * 8, count = 0;
 	unsigned long int current;
 
-	for (i; i >= 0; i--)
+	while (i)
 	{
-		current = n >> i;
+		current = n << --i;
 
 		if (current & 1)
 		{
