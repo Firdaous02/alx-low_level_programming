@@ -12,9 +12,9 @@ void print_binary(unsigned long int n)
 
 	while (i)
 	{
-		current = n << --i;
+		current = 1L << --i;
 
-		if (current & 1)
+		if (n & current)
 		{
 			_putchar('1');
 			count++;
