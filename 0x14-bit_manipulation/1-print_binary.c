@@ -8,7 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = 1;
+	unsigned long int i = 1, count = 0;
 
 	if (n == 0)
 	{
@@ -16,11 +16,16 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (i = 0; i < 64; i++)
+	for (i = 64; i > 0; i--)
 	{
-		if ((n & (1UL << i)) != 0)
+		if (((n >> i) & 1) != 0)
+		{
 			_putchar('1');
+			count++;
+		}
 		else
 			_putchar('0');
 	}
+	if (count != 0)
+                        _putchar('0');
 }
